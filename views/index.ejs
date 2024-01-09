@@ -1,0 +1,32 @@
+<!-- addBook.ejs - Formulaire d'ajout de livre -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter un Livre</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <a href="/afficher">Afficher  Les livres</a>
+  <div class="container mt-4">
+    <h2>Ajouter un Livre</h2>
+    <form action="/add-book" method="post">
+      <div class="form-group">
+        <label for="title">Titre:</label>
+        <input type="text" class="form-control" id="titre" name="titre" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Auteur:</label>
+        <input type="text" class="form-control" id="auteur" name="auteur" required>
+      </div>
+      <div class="form-group">
+        <label for="pages">Nombre de Pages:</label>
+        <input type="number" class="form-control" id="pages" name="pages" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
