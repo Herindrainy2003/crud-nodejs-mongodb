@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.use(methodOverride('_method'));
 //pour connecter a mongo
-mongoose.connect('mongodb+srv://all:mongomongo@sera.50wxxcf.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://yourusername:yourpassword@sera.50wxxcf.mongodb.net/?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true }
 )
